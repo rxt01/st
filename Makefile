@@ -55,6 +55,9 @@ install: st
 	tic -sx st.info
 	@echo Please see the README file regarding the terminfo entry of st.
 
+intall-font:
+	cp ./SauceCodeProNerdFont-Medium.ttf /usr/share/fonts/truetype/SauceCodeProNerdFont-Medium.ttf
+
 uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/st
 	rm -f $(DESTDIR)$(PREFIX)/bin/st-copyout
