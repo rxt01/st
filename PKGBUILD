@@ -13,7 +13,7 @@ options=('zipman')
 depends=('libxft')
 makedepends=('ncurses' 'libxext' 'git')
 optdepends=('python-pywal: make the colors fit with wallpaper')
-source=('git://github.com/rxt01/st')
+source=('git+https://github.com/rxt01/st')
 sha1sums=('SKIP')
 
 provides=("${_pkgname}")
