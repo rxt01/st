@@ -1,19 +1,19 @@
-# Maintainer:
+# Maintainer: Rxt01 <rxt012713@proton.me>
 
-pkgname=st-luke-git
+pkgname=rxtst
 _pkgname=st
-pkgver=0.8.2.r1062.2087ab9
+pkgver=1
 pkgrel=1
 epoch=1
-pkgdesc="Luke's simple (suckless) terminal with vim-bindings, transparency, xresources, etc. "
-url='https://github.com/LukeSmithxyz/st'
+pkgdesc="My build of the suckless terminal"
+url='https://github.com/rxt01/st'
 arch=('i686' 'x86_64')
 license=('MIT')
 options=('zipman')
 depends=('libxft')
 makedepends=('ncurses' 'libxext' 'git')
-optdepends=('dmenu: feed urls to dmenu')
-source=('git://github.com/LukeSmithxyz/st')
+optdepends=('python-pywal: make the colors fit with wallpaper')
+source=('git://github.com/rxt01/st')
 sha1sums=('SKIP')
 
 provides=("${_pkgname}")
