@@ -57,6 +57,7 @@ install: st
 
 intall-font:
 	cp ./SauceCodeProNerdFont-Medium.ttf /usr/share/fonts/truetype/SauceCodeProNerdFont-Medium.ttf
+	cp ./Gentium-Regular.ttf /usr/share/fonts/truetype/Gentium-Regular.ttf
 
 uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/st

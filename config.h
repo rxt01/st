@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "SauceCodePro NFP Medium:size=15:antialias=true:autohint=true";
-static char *font2[] = { "SauceCodePro NFP Medium:size=15:antialias=true:autohint=true" };
+static char *font2[] = { "SauceCodePro NFP Medium:size=15:antialias=true:autohint=true", "Gentium:style=Regular:size=15:ss01=1:cv98=1:cv83=1" };
 static int borderpx = 15;
 
 /*
@@ -155,7 +155,7 @@ unsigned int background = 258;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 2;
+static unsigned int cursorshape = 7;
 
 /*
  * Default columns and rows numbers
@@ -284,6 +284,7 @@ static Shortcut shortcuts[] = {
 	{ MODKEY,               XK_l,           externalpipe,   {.v = openurlcmd } },
 	{ MODKEY,               XK_y,           externalpipe,   {.v = copyurlcmd } },
 	{ MODKEY,               XK_o,           externalpipe,   {.v = copyoutput } },
+	{ MODKEY,               XK_f,           cyclefonts,     {}        },
 };
 
 /*
