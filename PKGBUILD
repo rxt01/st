@@ -2,7 +2,7 @@
 
 pkgname=rxtst
 _pkgname=st
-pkgver=1
+pkgver=0.8.4.r7.d3489f3
 pkgrel=1
 epoch=1
 pkgdesc="My build of the suckless terminal"
