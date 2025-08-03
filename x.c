@@ -1014,11 +1014,11 @@ xloadfont(Font *f, FcPattern *pattern)
 void
 cyclefonts(const Arg *dummy)
 	   {fonts_current++;
-	if (fonts_current > (sizeof fonts / sizeof fonts[0]) - 1) {
+	if (fonts_current > (sizeof font2 / sizeof font2[0]) - 1) {
 fonts_current = 0;
 }
-	usedfont = fonts[fonts_current];
-	xloadfonts(fonts[fonts_current], 0);
+	usedfont = font2[fonts_current];
+	xloadfonts(font2[fonts_current], 0);
 	redraw();
 	}
 
@@ -1295,8 +1295,8 @@ xinit(int cols, int rows)
 	if (!FcInit())
 		die("could not init fontconfig.\n");
 	
-	usedfont = fonts[fonts_current];
-	xloadfonts(fonts[fonts_current], 0);
+	usedfont = font2[fonts_current];
+	xloadfonts(font2[fonts_current], 0);
 
 
 	/* spare fonts */
