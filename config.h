@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "SauceCodePro NFP Medium:size=15:antialias=true:autohint=true";
-static char *font2[] = { "SauceCodePro NFP Medium:size=15:antialias=true:autohint=true", "Gentium:style=Regular:size=15" };
+static char *font = "SauceCodePro NFM Medium:size=15:antialias=true:autohint=true";
+static char *font2[] = { "SauceCodePro NFM Medium:size=15:antialias=true:autohint=true", "Gentium:style=Regular:size=15" };
 static int fonts_current = 0;
 static int borderpx = 15;
 
